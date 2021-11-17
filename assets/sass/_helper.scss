@@ -1,0 +1,338 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;}
+  
+  /* HTML5 display-role reset for older browsers */
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; } 
+  ol, ul {
+    list-style: none; }
+  
+  blockquote, q {
+    quotes: none; }
+  
+  blockquote {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  q {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+a{
+    text-decoration: none !important;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+.container{
+    max-width: 1280px;   
+    @include responsive(largs){
+        max-width: 88%; 
+    }
+}
+
+
+.wraper{
+    background-color: #f0f0f0;
+}
+
+
+
+h1{
+    font-size: 40px;
+    line-height: 1.2;
+    color: $prussianBlue;
+    font-weight: 700;
+    @include responsive(largs){
+        font-size: 35px;
+    }
+    @include responsive(lg){
+        font-size: 28px;
+    }
+    @include responsive(allPhone){
+        font-size: 27px;
+    }
+    @include responsive(Lphone){
+        font-size: 26px;
+    }
+
+}
+
+h2{
+    font-size: 35px;
+    line-height: 1.1;
+    color: $prussianBlue;
+    font-weight: 700; 
+    @include responsive(largs){
+        font-size: 32px;
+    }
+    @include responsive(lg){
+        font-size: 30px;
+    }
+    @include responsive(allPhone){
+        font-size: 28px;
+    }
+    @include responsive(Lphone){
+        font-size: 20px;
+    }
+} 
+
+h3{
+    font-size: 30px;
+    line-height: 1.2;
+    color: $prussianBlue;
+    font-weight: 700; 
+    @include responsive(largs){
+        font-size: 28px;
+    }
+    @include responsive(lg){
+        font-size: 24px;
+    }
+    @include responsive(allPhone){
+        font-size: 20px;
+    }
+    @include responsive(Lphone){
+        font-size: 19px;
+    }
+} 
+
+h4{
+    font-size: 20px;
+    line-height: 1.2;  
+    font-weight: 600;
+    @include responsive(largs){
+        font-size: 19px;
+    }
+    @include responsive(lg){
+        font-size: 18px;
+    }
+    @include responsive(allPhone){
+        font-size: 18px;
+    }
+    @include responsive(Lphone){
+        font-size: 16px;
+    }
+} 
+
+h5{
+    font-size: 19px;
+    line-height: 1.2;  
+    font-weight: 700;
+    @include responsive(largs){
+        font-size: 18px;
+    }
+    @include responsive(allPhone){
+        font-size: 18px;
+    }
+    @include responsive(Lphone){
+        font-size: 16px;
+    }
+} 
+
+h6{
+    font-size: 15px;
+    line-height: 1.5;   
+} 
+
+P{
+    font-size: 16px;
+    line-height: 1.5;
+    @include responsive(largs){
+        font-size: 15px;
+    }
+    @include responsive(allPhone){
+        font-size: 14px;
+    }
+    @include responsive(Lphone){
+        font-size: 13px;
+    }
+
+}
+
+.btn{
+    color: $white;
+    background-image: $primary;
+    filter: $filter;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 150px;
+    padding: 10px 30px;
+    transition: all .3s;
+    &:hover{
+        color: $white;
+        background-color: $prussianBlue;
+    }
+    
+}
+
+
+.section-title{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    .title-left{
+        h4{
+            font-weight: 600;  
+            color: #000000;
+            text-transform: capitalize;
+            span{color: #05b895;}
+        }
+        p{
+            color: #9a9a9a;
+        }
+    }
+    .title-right{
+        margin-left: auto;
+        align-self: center;
+        a{
+            font-size: 15px;
+            font-weight: 500; 
+            line-height: 1.67; 
+            color: #05b895;
+            display: inline-block;
+            @include responsive(Lphone){
+                font-size: 11px;
+            }
+            &:hover{
+                color: #000000;
+            }
+            &::after{
+                margin-left: 15px;
+                content: url(../img/left-arrow.png);
+                @include responsive(Lphone){
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* padding */
+.pt-100{
+    padding-top: 100px;
+    @include responsive(allPhone){
+        padding-top: 80px;
+    }
+}
+.pb-100{
+    padding-bottom: 100px;
+    @include responsive(allPhone){
+        padding-bottom: 80px;
+    }
+}
+.pt-150{
+    padding-top: 150px;
+    @include responsive(allPhone){
+        padding-top: 80px;
+    }
+}
+.pb-150{
+    padding-bottom: 150px;
+    @include responsive(allPhone){
+        padding-bottom: 80px;
+    }
+}
+
+
+/* margin */
+.mt-100{
+    margin-top: 100px;
+    @include responsive(allPhone){
+        margin-top: 80px;
+    }
+}
+.mb-100{
+    margin-bottom: 100px;
+    @include responsive(allPhone){
+        margin-bottom: 80px;
+    }
+}
+.mt-150{
+    margin-top: 150px;
+    @include responsive(allPhone){
+        margin-top: 80px;
+    }
+}
+.mb-150{
+    margin-bottom: 150px;
+    @include responsive(allPhone){
+        margin-bottom: 80px;
+    }
+}
+
+.desktop-none{ 
+    display: none;
+}
+@include responsive(allPhone){
+    .desktop-none{
+        display: block;
+    }
+    .phone-none{
+        display: none;
+    }
+}
+
+
+.grid-col-6{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1vw;
+    margin-top: 20px; 
+    @include responsive(sm){
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+    @include responsive(xs){
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        h6 {
+            font-size: 12px; 
+        }
+        P {
+            font-size: 11px;
+        }
+    }
+    @include responsive(allPhone){
+        margin-top: 0px; 
+    }
+}
+
+button, button:focus {
+    outline: none;
+}
+
+/*
+========================================
+tabs
+========================================
+*/
+ul.tabs {
+    list-style: none;
+}
+
+ul.tabs li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+ul.tabs li.current {}
+
+.tabs-list {
+    display: none;
+}
+
+.tabs-list.current {
+    display: inherit;
+}

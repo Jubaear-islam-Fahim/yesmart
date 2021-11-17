@@ -1,0 +1,118 @@
+
+/* Phone Top Bar */
+.phone-top{
+    padding: 12px 0;
+    border-bottom: 1px solid #cccc;
+    margin-bottom: 10px;
+    .top-add{
+        display: flex;
+    }
+    .phone-logo,
+    .notifications-phone,
+    .cate-nav-btn{
+        align-self: center;
+    }
+    .phone-logo{
+        img{}
+    }
+    .notifications-phone{
+        margin-left: auto;
+        background: #ccc;
+        padding: 4px 7px;
+        font-size: 13px;
+        border-radius: 3px;
+        color: #000;
+        display: flex;
+        i{
+            transform: rotate(10deg);
+            align-self: center;
+        }
+        span{
+            background-color: #fff;
+            color: #05b895;
+            padding: 1px 3px;
+            border-radius: 3px;
+            margin-left: 6px;
+        }
+    }
+    .phone-cate-nav-btn{
+        background: none;
+        border: 0;
+        outline: none;
+        font-size: 25px;
+        padding: 2px 4px; 
+        margin-left: 20px;
+    }
+    .phone-top-form{
+        position: relative;
+        margin-top: 10px;
+        input{
+            width: 100%;
+            height: 40px;
+            outline: none;
+            padding: 0 15px 0 35px;
+            border: 1px solid #f0f0f0;
+        }
+        .submit-btn{
+            position: absolute;
+            left: 0;
+            height: 40px;
+            background: none;
+            outline: none;
+            padding: 0 8px;
+            border: 0;
+        }
+    }
+}
+
+
+
+.phone-footer{
+    background-color: #fff;
+    box-shadow: -3px 0 10px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 10px 0; 
+    .phone-logo{
+        margin-left: auto;
+        background: #000;
+        width: 113px;
+        height: 48px;
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-transform: translateY(-45%);
+        transform: translateY(-45%);
+        margin: 0 11px;
+        a{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        align-self: center;
+        &:last-child{
+            margin-left: auto;
+        }
+        li{
+            width: 50%; 
+            text-align: center;
+        }
+        a{
+            font-size: 13px;
+            color: #6b6b6b;
+            i{
+                display: block;
+                font-size: 16px;
+                padding-bottom: 4px;
+            }
+        }
+    }
+}

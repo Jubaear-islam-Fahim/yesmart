@@ -1,0 +1,79 @@
+.hero-banner-area{
+
+}
+
+.hero-banner-slider{
+    margin-top: 17px;
+    .owl-item img{
+        width: auto;
+        height: 389px;
+    }
+    .owl-nav {
+        margin-top: 0;
+    }
+    .owl-nav [class*=owl-]{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); 
+        &:hover{
+            background-image: linear-gradient(148deg, #05b895, #05b895 112%);
+            i{
+                color: #fff;
+                background-image: unset;
+                -webkit-background-clip: unset;
+                -webkit-text-fill-color: unset;
+            }
+        }
+    } 
+    .owl-nav button.owl-next, 
+    .owl-nav button.owl-prev {
+        width: 47px;
+        height: 135px; 
+        border-radius: 2px; 
+        backdrop-filter: blur(30px);
+        border: solid 1px #d8d8d8;
+        background-color: #ffffff;
+        outline: none;
+        font-size: 25px;
+        i{
+            background-image: linear-gradient(148deg, #05b895, #05b895 112%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }  
+    .owl-prev{
+        left: -25px;
+       
+    }
+    .owl-next{
+        right: -25px;
+    }
+    .owl-dots .owl-dot.active span,
+    .owl-dots .owl-dot:hover span {
+        background: #05b895;
+        width: 25px;
+    }
+    .owl-nav.disabled+.owl-dots {
+        margin-top: -40px;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .owl-dots .owl-dot span{
+        background-color: #fff;
+    }
+}
+
+.banner-item{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.banner-right{
+    a{
+        display: block;
+        margin-top: 20px;
+    }
+}

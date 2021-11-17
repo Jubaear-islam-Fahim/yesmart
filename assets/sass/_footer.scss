@@ -1,0 +1,131 @@
+
+footer{
+    background-color: #fff;
+}
+.footer-widget-area{}
+.footer-widget-content{
+    padding: 50px 0;
+}
+.widget-contact{
+    .footer-logo{
+        margin-bottom: 30px;
+        display: inline-block;
+        img{}
+    }
+    p{}
+    .question{
+        padding: 20px 0;
+        h6{
+            padding-bottom: 8px;
+        }
+        a{ 
+            font-size: 20px;
+            font-weight: 600; 
+            line-height: 1.15; 
+            color: #363940;
+            text-decoration: none;
+        }
+        .suppt-time{
+            font-size: 15px; 
+            line-height: 1.53; 
+            color: #05b895;
+        }
+    }
+    ul{
+        li{
+            display: inline-block;
+        }
+        a{}
+    }
+}
+
+
+.footer-widget-contact-link{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.widget-contact-item{
+    h5{
+        padding-bottom: 20px;
+    }
+    ul{
+        overflow: hidden;
+        li{}
+        a{
+            position: relative;
+            font-size: 15px;
+            line-height: 1;
+            color: #363940;
+            margin-top: 15px;
+            display: block;
+            transition: all .3s; 
+            
+            &:hover{
+                color: #05b895;
+                transform: translateX(10px); 
+                &::before{
+                    opacity: 1;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%; 
+                transform: translateY(-50%) translateX(-10px);
+                height: 2px;
+                width: 10px;
+                z-index: 99;
+                border-radius: unset;
+                opacity: 0; 
+                transition: .5s;
+                background-color: #05b895;
+            }
+        }
+    }
+} 
+ 
+.copy-right-area {
+    border-top: solid 1px #e4e4e4;
+}
+
+.copyright-content{
+    display: flex;
+    padding: 18px 0;
+    p{
+        align-self: center;
+    }
+    .payment-img{
+        align-self: center;
+        margin-left: auto;
+    }
+}
+
+.promo-codes-content{
+    .promo-codes-item{
+        position: relative;
+        margin-bottom: 20px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .promo-btn{
+            background-color: #fff;
+            padding: 5px 10px;
+            font-size: 15px;
+            color: #000000;
+            display: inline-block;
+            position: absolute;
+            right: 14px;
+            bottom: 14px;
+            img{
+                width: auto;
+                filter: invert(42%) sepia(90%) saturate(1124%) hue-rotate(64deg) brightness(93%) contrast(101%);
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,146 @@
+/* Sing Up */
+
+.sign-form{}
+.sign-form .sing-box {
+	width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.sing-submit{
+	width: 100%;
+}
+
+.sing-policy {
+    text-align: center;
+    padding: 0 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.sing-policy a {
+	color: #42B964;
+}
+
+.using-sign {
+    text-align: center;
+    padding: 25px 0;
+}
+.using-sign h6 {
+	padding-bottom: 15px;
+    font-weight: 400;
+}
+.using-sign ul {}
+.using-sign ul li {
+	display: inline-block;
+}
+.using-sign ul li a {
+	border: 1px solid #000;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+	border-radius: 3px;
+}
+.using-sign ul li img {
+	width: 25px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.new-account {
+    text-align: center;
+    padding-top: 20px;
+}
+.new-account .theme-btn {
+    padding: 5px 10px;
+    text-transform: capitalize;
+    margin-left: 15px;
+}
+
+/* Log In */
+.login-form{}
+.login-form .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+.login-form .form-group label {
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    font-size: 20px;
+}
+.login-form .form-group input {
+	width: 100%;
+    height: 50px; 
+    border: 1px solid #ccc;
+    padding: 0 15px 0 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login-form .form-check {
+	display: flex;
+    gap: 10px;
+	margin-bottom: 20px;
+}
+.login-form .form-check input {}
+.login-form .form-check label {
+	align-self: center;
+}
+
+.lost-pass{
+	padding: 5px 0;
+    display: block;
+}
+.modl-clos{
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer !important;
+    z-index: 11;
+    border: 0;
+    background: none;
+    font-size: 20px;
+}
+
+.modl-clos::before{
+    content: "\f00d";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+}
+.theme-btn {
+    display: inline-block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background: #05b895;
+    border-radius: 0px;
+    position: relative;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    z-index: 2;
+    font-size: 14px;
+    letter-spacing: .28px;
+    text-align: center;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    border: 0;
+}
+.btn-md {
+    padding: 15px 35px;
+    display: inline-block;
+}
+.sing-form {
+    padding: 15px;
+}

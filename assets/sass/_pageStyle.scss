@@ -1,0 +1,485 @@
+/* 
+    Hero
+*/
+ 
+
+.hero-area{
+    background-color: $turquise;
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 65%;
+        height: 100%;
+        background: url(../img/hero-bg.png) no-repeat left;
+        background-size: cover;
+        @include responsive(allPhone){
+            display: none;
+        }
+    } 
+    .hero-col{
+        align-self: center;
+    }
+}
+.hero-text{
+    @include responsive(allPhone){
+        padding-top: 100px;
+    }
+    .hero-title{
+        margin-bottom: 10px;
+        @include responsive(Lphone){
+            br{
+                display: none;
+            }
+        }
+    }
+    p{}
+    .btn{
+        margin-top: 30px;
+    }
+}
+ 
+
+.hero-img{
+    padding-top: 80px;
+    @include responsive(allPhone){
+        padding-top: 49px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    @include responsive(Lphone){ 
+        width: 80%; 
+    }
+    img{
+        width: 100%;
+    }
+}
+
+
+/* 
+    Cat
+*/
+.cat-area{
+    position: relative;
+    .cat-col{
+        align-self: center;
+    }
+    .cat-img-bg{
+        background: $eggBlue;
+        position: absolute;
+        width: 50%;
+        height: 85%;
+        top: 50%;
+        transform: translateY(-50%);
+        @include responsive(allPhone){
+            display: none;
+        }
+    }
+    .cat-img{ 
+        @include responsive(allPhone){
+            margin-bottom: 30px; 
+        }
+    }
+    
+     
+}
+.cat-right{
+    .cat-img-bg{
+        right: 0;
+    }
+    .cat-img{
+        margin: 0 5%;
+        margin-right: 25%; 
+        @include responsive(allPhone){
+            margin: 0%; 
+            margin-bottom: 30px; 
+        }
+    }
+    .cat-col{
+        &:first-child{
+            order: 1;
+            @include responsive(allPhone){
+                order: 0;
+            }
+        }
+    }
+}
+.cat-img{
+    margin: 0 25%;
+    margin-right: 5%;
+    @include responsive(allPhone){
+        margin: 0%;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.cat-text{
+    h2{
+        padding-bottom: 30px;
+    }
+    h3{
+        padding-bottom: 30px;
+    }
+    p{
+        padding-bottom: 30px;
+    }
+    .btn{}
+}
+
+
+.page-cat-area{ 
+    
+    .cat-col{
+        align-self: center;
+    }
+    .cat-img {
+        margin: 0 0%; 
+        margin-bottom: 30px;
+    }
+}
+
+
+/*  
+    Strength
+*/
+.strength-area{
+    background-color: $turquise;
+    
+}
+.section-title{
+    padding-bottom: 20px;
+}
+
+.strength-container{
+    text-align: center;
+    margin: 0 -2%;
+}
+
+.strength-item{
+    display: inline-block; 
+    width: 32.333333%;
+    @include responsive(allPhone){
+        width: 100%;
+    }
+    .media{
+        background-color: $white;
+        filter: $filter;
+        margin: 15px 15px;
+        padding: 30px;
+        @include responsive(lg){
+            display: block;
+        }
+    }
+    img{
+        height: 100px;
+        width: auto;
+    }
+    .strength-text{
+        text-align: left;
+        align-self: center;
+        padding-left: 15px;
+        @include responsive(lg){
+            text-align: center;
+        }
+        h4{
+            font-weight: 700;
+        }
+    }
+}
+
+
+/* 
+    partners
+*/
+.partners-area{}
+
+
+.partners-content{
+    .owl-item{
+        align-self: center;
+    }
+    .partners-item {
+        height: 120px; 
+        align-self: center;
+        img{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+
+/* 
+    Testimonials
+*/
+.testimonials-area{
+    background-color: $turquise;
+}
+.testimonials-content{
+    .testimonials-item{
+        position: relative;
+        z-index: 1; 
+        filter: $filter;
+        padding: 35px;
+        margin: 50px 39px;
+        @include responsive(lg){
+            padding: 21px;
+            margin: 20px 20px;
+        }
+        @include responsive(allPhone){
+            padding: 25px;
+            margin: 45px 25px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            right: -8%;
+            top: -5%;
+            width: 80%;
+            height: 110%;
+            background-color: $prussianBlue;
+            z-index: -11;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: $white; 
+            z-index: -1;
+        }
+        img{
+            width: auto;
+            margin-bottom: 30px;
+        }
+        h4{
+            font-weight: 700;
+        }
+        h5{
+            color: $prussianBlue;
+        }
+        .content{
+            padding-top: 15px;
+            p{
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+
+/* 
+    Page Hero
+*/
+
+.page-hero-area{
+    position: relative;
+    margin: 54px 0;
+    padding-top: 100px;
+    @include responsive(allPhone){
+        color: $white;
+        h1{
+            color: $black
+        }
+    }
+    .page-hero-col{
+        align-self: center;
+    }
+    .hero-img-bg{
+        background: $eggBlue;
+        position: absolute;
+        width: 35%;
+        height: 115%;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        @include responsive(allPhone){
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+.page-hero-text{
+    .page-hero-title{
+        font-size: 55px;
+        @include responsive(lg){
+            font-size: 40px;
+        }
+        @include responsive(allPhone){
+            font-size: 38px;
+        }
+        @include responsive(Lphone){
+            font-size: 30px;
+        }
+    }
+    h6{
+        padding: 20px 0;
+    }
+    .btn{}
+}
+
+.page-hero-img{
+    @include responsive(allPhone){
+        margin-top: 30px;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+
+/* 
+    Team
+*/
+.team-area{}
+
+.team-item{
+    background-color: $white;
+    filter: $filter;
+    margin: 30px 0 0 0;
+    padding: 30px;
+    h4{
+        font-weight: 700;
+    }
+    h5{
+        color: $eggBlue;
+        padding: 10px 0 25px;
+    }
+    p{}
+}
+
+/* 
+    Contact Hero
+*/
+
+.contact-hero-area{
+    background: url(../img/c-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 250px 0 250px;
+    @include responsive(allPhone){
+        padding: 140px 0 140px;
+    }
+    .page-hero-title{
+        font-size: 60px;
+        padding-bottom: 20px;
+        @include responsive(largs){
+            font-size: 50px;
+        }
+        @include responsive(lg){
+            font-size: 40px;
+        }
+        @include responsive(allPhone){
+            font-size: 38px;
+        }
+        @include responsive(Lphone){
+            font-size: 30px;
+        }
+    }
+    h6{
+        @include responsive(allPhone){
+            color: $eggBlue;
+        } 
+        a{
+            color: $eggBlue;
+        }
+    }
+}
+
+.contact-services{}
+
+.contact-services-content{}
+.contact-services-item{
+    background-color: $white;
+    filter: $filter;
+    padding: 30px;
+    display: inline-block;
+    margin: -60px 30px 0;
+    margin-left: 0;
+    text-decoration: none;
+    color: $black;
+    transition: all .3s;
+    @include responsive(xs){
+        padding: 20px; 
+        margin: -60px 10px 0;
+    } 
+    @include responsive(Lphone){
+        padding: 15px;
+        margin: -60px 1px 0;
+        width: 45%;
+    } 
+    &:hover{
+        background-color: $turquise;
+        h4{
+            color: $prussianBlue;
+        }
+    }
+    img{
+        height: 80px;
+        margin-right: 15px;
+        @include responsive(xs){
+            display: block;
+            height: 55px;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        @include responsive(Lphone){
+            height: 40px;
+        }
+    }
+    h4{
+        display: inline-block;
+        @include responsive(Lphone){
+            font-size: 13px;
+        }
+    }
+}
+.contact-services-item.active{
+    background-color: $turquise;
+    h4{
+        color: $prussianBlue;
+    }
+}
+
+.student-content{
+    padding: 70px 0;
+    h2{
+        padding-bottom: 20px;
+    }
+}
+
+.student-form{
+    background-color: $turquise;
+    filter: $filter;
+    padding: 35px;
+    label{
+        font-weight: 700;
+        color: $prussianBlue;
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    textarea, input{
+        width: 100%;
+        font-size: 18px;
+        padding: 10px;
+        margin-bottom: 30px;
+        border: 0;
+        &::placeholder{
+            color: #9B9999;
+        }
+    }
+    textarea{
+        height: 160px;
+    } 
+}

@@ -1,0 +1,195 @@
+.header-address{
+    background-color: $white-smoke;
+    padding: 7px 0;
+}
+.top-address-content{
+    display: flex; 
+}
+
+.header-address-item{
+    align-self: center;
+    &:last-child{ 
+        margin-left: auto;
+        display: flex; 
+    }
+}
+.top-address{
+    li{
+        display: inline-block; 
+        &:last-child{
+            &::before{
+                content: "|";
+                color: #05b895;
+                margin: 0 8px 0 2px;
+                font-weight: 500;
+            }
+        }
+    }
+    strong{font-weight: 700;}
+    a{
+        font-size: 13px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.77;
+        letter-spacing: normal; 
+        color: #363940;
+    }
+} 
+
+.top-sign{
+    align-self: center;
+    li{
+        display: inline-block;
+        &:last-child{
+            &::before{
+                content: "|";
+                color: #05b895;
+                margin: 0 8px 0 2px;
+                font-weight: 500;
+            }
+        }
+    }
+    a{
+        font-size: 13px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.77;
+        letter-spacing: normal; 
+        color: #343434;
+    }
+}
+
+
+/* Select */
+
+.cant-wrap{
+    width: 66px; 
+    margin: 0 25px;
+    .default_option:before{
+        content: "\f078";
+        position: absolute;
+        font-family: "Font Awesome 5 free";
+        font-weight: 900;
+        right: 7px; 
+        color: #05b895;
+        font-size: 13px;
+    }
+    .option{
+        p{
+            width: 41px;
+            height: 23px;
+            margin: 0 6.5px 0 0;
+            padding: 2px 0 2px; 
+            border-radius: 2px;
+            
+            background-color: #ffffff;
+            font-size: 13px;
+            font-weight: 500;
+            font-stretch: normal; 
+            letter-spacing: normal;
+            text-align: center;
+            color: #343434;
+            text-transform: uppercase;
+            &:hover{ 
+                color: #ffffff;
+                background-image: linear-gradient(124deg, #05b895, #05b895 113%);
+            }
+
+        }
+    } 
+}
+
+
+.select_wrap{ 
+    position: relative;
+    user-select: none;
+    align-self: center; 
+    .default_option{
+        background-color: #dfdfdf;
+        border-radius: 3px;
+        position: relative;
+        cursor: pointer; 
+        padding: 3px;
+        &:before{
+            content: "\f078";
+            position: absolute;
+            font-family: "Font Awesome 5 free";
+            font-weight: 900; 
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        li{ 
+        }
+    }
+    .select_ul{
+        position: absolute;
+        top: 28px;
+        left: 0;
+        width: 100%; 
+        border-radius: 2px;
+        display: none;
+        margin: 3px 0; 
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.22);
+        li{ 
+            cursor: pointer;
+            &:first-child:hover{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            &:last-child:hover{
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            &:hover{ 
+            }
+              
+        }
+        .option{
+            display: flex;
+            align-items: center;
+            p{
+                width: 100%;height: auto;
+                margin-right: 0;
+            }
+        }
+    }
+    .option{
+        display: flex;
+        align-items: center; 
+    }
+}
+   
+.select_wrap.active {
+    .default_option2{
+        &:before{ 
+            transform: rotate(180deg) translateY(50%);
+        }
+    }
+    .select_ul{
+        display: block;
+        z-index: 22;
+    }
+}
+
+  
+/* language */
+.language-tabs{
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    li{}
+    a{ 
+        font-size: 13px;
+        font-weight: 600; 
+        line-height: 1.77; 
+        color: #343434;
+        padding: 0px 10px;
+        border-radius: 2px;
+    }
+    .active{
+        color: #ffffff;
+        background-image: linear-gradient(124deg, #05b895, #05b895 113%);
+    }
+}
